@@ -1,3 +1,55 @@
+/* General */
+
 body {
-  background: #ffe;
+  background: #fff url('../images/panel.gif') repeat-y;
 }
+
+/* Header */
+
+#header {
+  background: #000 url('../images/header.gif') repeat-x;
+  border-bottom: 1px solid #60738d;
+  line-height: 40px;
+  height: 40px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+  #header h1 {
+    color: #fff;
+    margin: 0;
+  }
+
+/* Table of Contents */
+
+#toc {
+  float: left;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 10px;
+  width: 200px;
+}
+
+  #toc a { 
+    background: url('../images/arrow.gif') no-repeat center right;
+    color: #717980;
+    display: block;
+    margin-top: 0.5em;
+    padding: 0.2em;
+  }
+  
+    #toc a:hover {
+      color: #454b50;
+    }
+
+/* Article */
+
+#article { padding-left: 240px; }
+
+  #article .footer {
+    border-top: 2px solid #eee;
+    font-size: 0.8em;
+    text-align: center;
+    margin-top: 1em;
+    padding-top: 1em;
+  }
