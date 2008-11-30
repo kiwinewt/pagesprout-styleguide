@@ -1,0 +1,60 @@
+/* Text */
+
+body, input, textarea, select {
+  color: #222;
+  font: 10pt Verdana, Arial, sans-serif;
+}
+
+body { line-height: 1.6em; }
+
+/* Headings */
+
+h1, h2, h3 {
+  color: #666;
+  margin: 0.2em 0;
+}
+
+h1 { font-size: 1.6em; }
+
+h2 { font-size: 1.4em; }
+
+h3 { font-size: 1.2em; }
+
+/* Links */
+
+a { text-decoration:none; }
+
+  a:link, a:visited { color: #0086ff; }
+  
+  a:hover { color: #ff5c07; }
+  
+  a:active { color: #910; }
+  
+  a img { border-style: none; }
+
+/* Tables */
+
+table {
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+
+  table td, table th {
+    border: 1px solid #ccc;
+    padding: 0.2em 0.5em;
+  }
+  
+  table th { font-weight: bold; }
+
+/* Forms */
+
+form { margin: 1em 0; }
+
+  form .element {
+    padding: 0.5em 0;
+  }
+  
+  form label, form .label {
+    display: block;
+    font-weight: bold;
+  }
