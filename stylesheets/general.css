@@ -114,3 +114,18 @@ form { margin: 1em 0; }
   .directory-tree li.image {
     background-image: url('../images/picture.png');
   }
+
+/* Special */
+
+.note {
+  color: #999;
+  margin: 1em 0;
+  padding: 1em;
+}
+
+  .note h3, .note p { margin: 0; }
+  
+  .note h3 {
+    font-weight: bold;
+    font-size: 1.1em;
+  }
