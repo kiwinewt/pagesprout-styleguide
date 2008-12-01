@@ -12,27 +12,80 @@
     </div>
     
     <ul id="toc">
-      <li><a href="#themes">Theme Guidelines</a></li>
-      <li><a href="#admin">Admin Interface Guidelines</a></li>
+      <li><a href="#intro">Introduction to Themes</a></li>
+      <li><a href="#structure">Structure of a Theme</a></li>
+      <li><a href="#building">Building your first theme</a></li>
     </ul>
     
     <div id="article">
+    
+      <h2 id="intro">Introduction to Themes</h2>
       
       <p>
-        This style guide is a living document.
+         A theme does not have any template files. You can modify the layout in <code>app/views/layouts/master.html.erb</code> if needed, but beware that altering the HTML will likely break any other themes.
       </p>
-      
-      <h2 id="themes">Theme Guidelines</h2>
       
       <p>
-        Themes can be simply updated.
+         Instead, you should use the existing, semantic markup to style your theme, a la <a href="http://www.csszengarden.com/">CSS Zen Garden</a>.
       </p>
       
-      <h2 id="admin">Admin Interface Guidelines</h2>
+      <h2 id="structure">Structure of a Theme</h2>
       
       <p>
-        The admin interface is kept separate from the activated theme.
+        Themes live under <code>public/themes/<em>themename</em></code>.
       </p>
+      
+      <p>
+        The two files you <strong>must</strong> include are: <code>master.css</code> and <code>screenshot.jpg</code>.
+      </p>
+      
+      <p>
+        A typical theme will look like this:
+      </p>
+      
+      <div class="directory-tree">
+        <ul>
+          <li>
+            public/
+            <ul>
+              <li>
+                themes/
+                  <ul>
+                    <li>
+                      <em>themename</em>/
+                      <ul>
+                        <li>images/</li>
+                        <li>
+                          stylesheets/
+                          <ul>
+                            <li class="stylesheet">master.css</li>
+                          </ul>
+                        </li>
+                        <li class="image">screenshot.jpg</li>
+                      </ul>
+                    </li>
+                  </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      
+      <h2 id="building">Building Your First Theme</h2>
+      
+      <ol>
+        <li>Open the <code>public/themes/</code> folder</li>
+        <li>Create a new folder called <code>mytheme</code></li>
+        <li>Create a folder called <code>stylesheets</code></li>
+        <li>Create a new text file called <code>master.css</code> and save it in the <code>stylesheets</code> folder</li>
+      </ol>
+      
+      <p>
+        You can add more stylesheets by adding the <code>@import</code> statement in your <code>master.css</code> file:
+      </p>
+      
+      <pre><code>@import 'general.css';
+@import 'composition.css';</code></pre>
       
       <div class="footer">
         Last updated 2008-12-01.

@@ -30,21 +30,27 @@ body {
   width: 200px;
 }
 
+  #toc li {
+    margin: 0;
+  }
+
   #toc a { 
-    background: url('../images/arrow.gif') no-repeat center right;
+    background: url('../images/arrow.gif') no-repeat 185px 50%;
     color: #717980;
     display: block;
     margin-top: 0.5em;
-    padding: 0.2em;
+    padding: 5px;
   }
   
     #toc a:hover {
+      background-color: #e1e6ec;
       color: #454b50;
+      text-decoration: none;
     }
 
 /* Article */
 
-#article { padding-left: 240px; }
+#article { padding: 0 20px 0 240px; }
 
   #article .footer {
     border-top: 2px solid #eee;
