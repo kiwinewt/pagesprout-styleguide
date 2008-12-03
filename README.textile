@@ -1,5 +1,5 @@
-h1. "PageSprout Style Guide":http://docs.pagesprout.com
+h1. "PageSprout Style Guide":http://style.pagesprout.com
 
 The PageSprout style guide docs, which can be found at:
 
-"http://docs.pagesprout.com":http://docs.pagesprout.com
+"http://style.pagesprout.com":http://style.pagesprout.com
